@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+span {
+  background-color: #ffacacff;
+  padding: 1px 15px 0;
+  border-radius:30px;
+  font-family: "Pacifico", sans-serif;
+}
+
+body {
+  background-color: #FBEFEF;
+   font-family: "Poppins", sans-serif;
+}
+
+h1{
+  text-align:center;
+  font-size:4em;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height:5vh;
+  z-index:999;
+  width:90%;
+  margin:20px auto;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  font-weight:900;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000000ff;
+  font-size: 16px;
+  transition: color 0.3s;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #000;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.container {
+  weight:80%;
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  background-color: #FBEFEF;
+  align-items:center;
+  margin:30px auto;
+  height:100vh;
+}
+
+.container .image-section {
+  display:flex;
+  gap:80px;
+}
+
+.container .content-left{
+  width: 600px;
+}
+
+.container h1{
+  font-size:4em;
+   font-family: "Pacifico", sans-serif;
+  text-align:justify;
+}
+
+.container p{
+  font-size:18px;
+   font-family: "Poppins", sans-serif;
+  text-align:center;
+  width:700px;
+}
+
+.driver-section {
+  width:80%;
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  background-image: url('image/download.gif');
+    background-size: cover;
+    background-position: center;
+  margin:4em auto;
+  gap:5em;
+}
+
+.content-left{
+  display:flex;
+  gap:30px;
+  align-items:center;
+  justify-content:center;
+  margin-top:3em;
+}
+
+.content-left p{
+  text-align:justify;
+   width:700px;
+}
+
+.content-right p{
+  text-align:justify;
+  width:700px;
+}
+
+.driver-section img{
+  width:300px;
+  border-radius:30px;
+}
+
+.content-right{
+  display:flex;
+    gap:30px;
+  align-items:center;
+  justify-content:center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+  .container {
+    display:flex;
+    flex-wrap:wrap;
+    height:auto;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 64px;
+    right: 0;
+    background: #ffffff;
+    flex-direction: column;
+    width: 200px;
+    padding: 16px;
+    gap: 16px;
+    display: none;
+    border-left: 1px solid #eaeaea;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}

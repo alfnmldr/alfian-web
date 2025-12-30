@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAS - WEB</title>
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+    <div class="logo">Lecreckhkh.</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Service</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+    <div class="menu-toggle" id="menuToggle">
+      ☰
+    </div>
+  </nav>
+  <div class="container" data-aos="fade-in">
+    <h1>The Pursuit <span>of 0.001</span></h1>
+    <p>In Formula 1, time is the only currency that matters. It is a sport where hundreds of millions of dollars are spent to find a fraction of a second. It is the peak of human engineering met by the limits of human reflex.</p>
+    <div class="image-section">
+      <img src="assets/image/formula_1_laptop_sticker___Mercedes_Formula_1_F1_Car_Sticker-removebg-preview.png" alt="">
+      <img src="assets/image/formula_1_laptop_sticker___Red_Bull_Racing_Formula_1_F1_Car_Sticker-removebg-preview.png" alt="">
+    </div>
+  </div>
+
+  <h1>Driver You Must <span>Know</span></h1>
+  <div class="driver-section">
+    <div class="content-left" data-aos="fade-up-left" data-aos="fade-right" data-aos-offset="200"
+    data-aos-delay="200"   data-aos-duration="1000"
+    data-aos-easing="ease-in-out">
+      <img src="assets/image/Ferrari F1 Poster - Michael Schumacher Poster Art, F1 Art Print, Retro F1.jpg" alt="">
+      <p>Michael Schumacher redefined Formula 1 by merging elite physical conditioning with an obsessive technical dedication that transformed Scuderia Ferrari into a dominant dynasty. A seven-time world champion, he was more than a driver; he was a relentless architect of speed who set the gold standard for modern racing through his "Regenkönig" mastery and an uncompromising pursuit of perfection.</p>
+    </div>
+    <div class="content-right" data-aos="fade-up-right" data-aos-offset="200"
+    data-aos-delay="300"   data-aos-duration="1200"
+    data-aos-easing="ease-in-out">
+    <p>Max Verstappen is the definitive disruptor of modern Formula 1, a prodigy who evolved from the sport’s youngest-ever debutant into an unstoppable force of clinical dominance. Defined by an aggressive, uncompromising racing style and a "win-at-all-costs" mentality, he dismantled long-standing records to secure four consecutive world titles between 2021 and 2024. As the centerpiece of Red Bull Racing, Verstappen has transformed the cockpit into a space of pure efficiency, combining raw natural talent with a relentless consistency that has redefined the benchmark for excellence on the grid.</p>
+      <img src="assets/image/Max Helmet reveal.jpg" alt="">
+    </div>
+  </div>
+  <script>
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+
+    menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+  </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
