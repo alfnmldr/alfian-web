@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archive - The Poles</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.rtl.min.css" integrity="sha512-4W9f7EnJgM33kD11Ux2XNF9DSpJ7LoQXCvBNhzKTorRSyjPHmjXhHMZMafIYqYvTNWahUk2ulNsarMMLDEv4zA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+    <div class="logo">The Poles.</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="funfact.html">Fun Fact</a></li>
+      <li><a href="archive.html" id="active">Archive</a></li>
+      <li><a href="tour.html">Contact</a></li>
+    </ul>
+    <div class="menu-toggle" id="menuToggle">
+      ☰
+    </div>
+  </nav>
+<section class="gallery-section">
+  <h1>The Gallery | <span id="tanggal-hari"></span></h1>
+  <div class="hero-banner">
+    <img src="../assets/image/banner.jpg" alt="">
+  </div>
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="../assets/image/Yesung Instagram update.jpg" alt="">
+      <span>The?</span>
+    </div>
+    <div class="gallery-item">
+      <img src="../assets/image/The Poles (1).jpg" alt="">
+      <span>Poles!</span>
+    </div>
+  </div>
+</section>
+
+<div class="gallery-section">
+    <h3>Best <span>Album!</span></h3>
+  <div class="wrapper-card">
+
+    <div class="img-gallery-container">
+      <img src="../assets/image/sun shower - the poles.jpg" alt="cover-album">
+      <p>Sun Shower</p>
+    </div>
+
+    <div class="img-gallery-container">
+      <img src="../assets/image/we get, the same - the poles.jpg" alt="cover-album">
+      <p>We Get, The Same</p>
+    </div>
+
+    <div class="img-gallery-container">
+      <img src="../assets/image/space - the poles.jpg" alt="cover-album">
+      <p>Space</p>
+    </div>
+
+    <div class="img-gallery-container">
+      <img src="../assets/image/good morning sunshine - the poles.jpg" alt="cover-album">
+      <p>Good Morning Sunshine</p>
+    </div>
+
+    <div class="img-gallery-container">
+      <img src="../assets/image/cares - 2024.jpg" alt="cover-album">
+      <p>Cares</p>
+    </div>
+
+    <div class="img-gallery-container">
+      <img src="../assets/image/the high tide club - the poles.jpg" alt="cover-album">
+      <p>The High Tide</p>
+    </div>
+  </div>
+</div>
+
+<footer class="footer-blur">
+  <p>© 2025 Alfian Melandri | All rights reserved.</p>
+</footer>
+
+<script>
+     const skrg = new Date();
+const daftarHari = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
+const daftarBulan = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", 
+                     "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
+const hari = daftarHari[skrg.getDay()];
+const tgl = skrg.getDate();
+const bln = daftarBulan[skrg.getMonth()];
+const thn = skrg.getFullYear();
+const formatCustom = `${hari}, ${tgl} ${bln} ${thn}`;
+
+document.getElementById('tanggal-hari').innerHTML = formatCustom;
+</script>
+
+  <script>
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+
+    menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+  </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
