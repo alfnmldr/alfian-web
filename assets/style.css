@@ -949,7 +949,6 @@ body {
   .first-section {
     flex-direction: column;
     min-height: auto;
-    padding: 2em 1.2em;
     gap: 2em;
   }
 
@@ -962,7 +961,8 @@ body {
   }
 
   .side-text p {
-    max-width: 100%;
+    max-width: 90%;
+    margin:auto;
   }
 
   .footer-blur {
@@ -973,17 +973,34 @@ body {
     font-size: 11px;
   }
 
+  #spoti-code {
+    width:90%;
+    margin-bottom:5em;
+    height:max-content;
+  }
+
+  .text-wrap p {
+    width: 90%;
+    text-align:justify;
+    font-size: 1em;
+  }
+
   .side-text h1 {
-    font-size: 2rem;
+    font-size: 1.3rem;
   }
 
   .side-text p {
-    font-size: 10px;
+    font-size: 13px;
     text-align:justify;
   }
 
   .text-wrap h1 {
-    font-size: 2em;
+    font-size: 1.7em;
+  }
+
+  .spotify-album img {
+    width:100%;
+    margin:20px auto;
   }
 
     .gallery-section h1 {
