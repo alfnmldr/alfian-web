@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tour - The Poles</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../assets/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
 </head>
 <body>
         <nav class="navbar">
     <div class="logo">The Poles.</div>
     <ul class="nav-links" id="navLinks">
       <li><a href="../index.html">Home</a></li>
-      <li><a href="funfact.html">Fun Fact</a></li>
+      <li><a href="funfact.html">About</a></li>
       <li><a href="archive.html">Archive</a></li>
       <li><a href="tour.html" id="active">Contact</a></li>
     </ul>
@@ -25,53 +25,70 @@
     </div>
   </nav>
   <div class="container py-5">
-    <div class="row justify-content-center align-items-center">
-      <div class="col-md-8 col-lg-6">
-        
-        <div class="card shadow-sm border-0 rounded-4">
-          <div class="card-body p-4 p-md-5">
-            
-            <!-- Headline -->
-            <h2 class="text-center fw-bold mb-3">
-              Bring the Poles to Your City
-            </h2>
+  <div class="row justify-content-center">
+    <div class="col-lg-10 col-xl-9">
+      
+      <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+        <div class="row g-0">
 
-            <!-- Body text -->
-            <p class="text-center text-muted mb-4">
-              Want to host a performance or stay updated on our next secret show?
-              Fill out the coordinates below.
-            </p>
+          <!-- LEFT : FORM -->
+          <div class="col-md-6 d-flex">
+            <div class="card-body p-4 p-md-5 d-flex flex-column justify-content-center w-100">
 
-            <!-- Form -->
-            <form>
-              <div class="mb-3">
-                <label class="form-label">Name</label>
-                <input type="text" class="form-control" placeholder="Your name">
-              </div>
+              <h3 class="fw-bold mb-3">
+                Bring The Poles to Your City
+              </h3>
 
-              <div class="mb-3">
-                <label class="form-label">Location (City / Country)</label>
-                <input type="text" class="form-control" placeholder="City, Country">
-              </div>
+              <p class="text-muted mb-4">
+                Want to host a performance or stay updated on our next secret show?
+                Fill out the coordinates below.
+              </p>
 
-              <div class="mb-4">
-                <label class="form-label">Message</label>
-                <textarea class="form-control" rows="4" placeholder="Your message"></textarea>
-              </div>
+              <form>
+                <div class="mb-3">
+                  <label class="form-label">Name</label>
+                  <input type="text" class="form-control" placeholder="Your name">
+                </div>
 
-              <div class="d-grid">
-                <button type="submit" class="btn btn-dark btn-lg rounded-pill">
-                  Submit
-                </button>
-              </div>
-            </form>
+                <div class="mb-3">
+                  <label class="form-label">Location (City / Country)</label>
+                  <input type="text" class="form-control" placeholder="City, Country">
+                </div>
 
+                <div class="mb-4">
+                  <label class="form-label">Message</label>
+                  <textarea class="form-control" rows="4" placeholder="Your message"></textarea>
+                </div>
+
+                <div class="d-grid">
+                  <button class="btn btn-dark btn-lg rounded-pill">
+                    Submit
+                  </button>
+                </div>
+              </form>
+
+            </div>
           </div>
-        </div>
 
+          <!-- RIGHT : IMAGE -->
+          <div class="col-md-6 d-none d-md-block p-0">
+            <div class="h-100 position-relative">
+              <img 
+                src="../assets/image/Yesung Instagram update.jpg" 
+                alt="The Poles" 
+                class="w-100 h-100"
+                style="object-fit: cover; object-position: center;"
+              >
+            </div>
+          </div>
+
+        </div>
       </div>
+
     </div>
   </div>
+</div>
+
 
 <footer class="footer-blur">
   <p>© 2026 Alfian Melandri | 251011700937 | 01SIFP015</p>

@@ -15,7 +15,7 @@
     <div class="logo">The Poles.</div>
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html" id="active">Home</a></li>
-      <li><a href="pages/funfact.html">Fun Fact</a></li>
+      <li><a href="pages/funfact.html">About</a></li>
       <li><a href="pages/archive.html">Archive</a></li>
       <li><a href="pages/tour.html">Contact</a></li>
     </ul>
@@ -24,7 +24,15 @@
       ☰
     </div>
   </nav>
-  <div class="container" data-aos="fade-in">
+  <div class="banner-container">
+    <h1>Welcome - The Poles</h1>
+    <!-- Banner Images -->
+    <div class="banner-img">
+      <img src="assets/image/banner-img.jpg" alt="The Poles Performance 1">
+      <img src="assets/image/download (21).jpg" alt="The Poles Performance 2">
+    </div>
+  </div>
+  <div class="container" data-aos="fade-up">
     <div class="text-right">
       <h1>The Poles.</h1>
       <p>Formed in South Korea, The Poles is an indie rock band that captures the essence of youth, nostalgia, and the vastness of emotion. Led by the visionary singer-songwriter Daniel Kim (known for his work with Wave to Earth), the band blends dream-pop textures with shoegaze-inspired guitars. Their music isn't just heard; it’s felt—like a cold breeze on a sunny afternoon or the quiet stillness of a late-night drive.</p>
@@ -40,13 +48,13 @@
   <div class="driver-section">
     <div class="content-left" data-aos="fade-up-right" data-aos="fade-right" data-aos-offset="200"
     data-aos-easing="ease-in-out">
-      <img src="assets/image/더폴수.jpg" alt="">
+      <img src="assets/image/The Poles.jpg" alt="">
       <p>The band’s signature sound is a collaborative masterpiece between Daniel Kim (Vocals/Guitar), Kyungbin Kim (Bass), and Dongkyu Shin (Drums). Since their debut, they have carved out a unique space in the Korean indie scene, prioritizing "space" and "reverb" to create an immersive listening experience. They remain a staple for listeners seeking solace in melancholic yet hopeful melodies.</p>
     </div>
     <div class="content-right" data-aos="fade-up-left" data-aos-offset="200"
     data-aos-easing="ease-in-out">
     <p>Beyond the technicality of their instruments, The Poles are storytellers of the "slow movement." Their lyrics often touch upon the beauty of the mundane and the complexity of the passage of time. By blending elements of British Rock with Korean sensibilities, they create a sonic landscape that feels both global and deeply personal, inviting fans to slow down and find beauty in the details.</p>
-      <img src="assets/image/Yesung Instagram update.jpg" alt="">
+      <img src="assets/image/더폴수.jpg" alt="">
     </div>
   </div>
 
@@ -86,11 +94,34 @@
   </div>
 
   <p>From their early singles to their critically acclaimed EPs, The Poles have consistently evolved. Their discography explores themes of time, nature, and the human condition. Whether it’s the soaring riffs of "The Moon in the Ocean" or the intimacy of their acoustic sessions, their music invites you to stop and breathe in a fast-paced world.</p>
+
+  <div id="clock"></div>
 </div>
 
 <footer class="footer-blur">
   <p>© 2026 Alfian Melandri | 251011700937 | 01SIFP015</p>
 </footer>
+
+<script>
+  function updateClock() {
+    const now = new Date();
+
+    let hours   = now.getHours();
+    let minutes = now.getMinutes();
+    let seconds = now.getSeconds();
+
+    hours   = hours.toString().padStart(2, '0');
+    minutes = minutes.toString().padStart(2, '0');
+    seconds = seconds.toString().padStart(2, '0');
+
+    document.getElementById("clock").innerHTML =
+      `${hours}:${minutes}:${seconds}`;
+  }
+
+  setInterval(updateClock, 1000);
+
+  updateClock();
+</script>
 
 
   <script>
